@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F790881A-5F4B-4452-A655-36268A4D589D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GNV_CenterGás</RootNamespace>
+    <AssemblyName>GNV_CenterGás</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\galeria.css" />
+    <Content Include="Content\mobile.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\Icones\3856f2d06fa64ae.jpg" />
+    <Content Include="Models\Icones\aaa.png" />
+    <Content Include="Models\Icones\b2e48580147ca0ed3f970f30bf8bb009-marcador-de-localiza--o-do-mapa-by-vexels.png" />
+    <Content Include="Models\Icones\centergas.png" />
+    <Content Include="Models\Icones\duvida.png" />
+    <Content Include="Models\Icones\face.png" />
+    <Content Include="Models\Icones\galeria.png" />
+    <Content Include="Models\Icones\icones.jpg" />
+    <Content Include="Models\Icones\img-33780-20170403154600.png" />
+    <Content Include="Models\Icones\inicio.png" />
+    <Content Include="Models\Icones\inicio2.png" />
+    <Content Include="Models\Icones\inicio3.png" />
+    <Content Include="Models\Icones\inovao-meioambiente.png" />
+    <Content Include="Models\Icones\inst.png" />
+    <Content Include="Models\Icones\Insta.jpg" />
+    <Content Include="Models\Icones\insta.png" />
+    <Content Include="Models\Icones\instag.png" />
+    <Content Include="Models\Icones\lampada.png" />
+    <Content Include="Models\Icones\like-button-png-2.png" />
+    <Content Include="Models\Icones\marcas.png" />
+    <Content Include="Models\Icones\PNGPIX-COM-Monitor-PNG-Transparent-Image-500x388.png" />
+    <Content Include="Models\Icones\thumbnail_visto.png" />
+    <Content Include="Models\Icones\Visto_examinado.png" />
+    <Content Include="Models\Img\084_085_ae623-03 %281%29.jpg" />
+    <Content Include="Models\Img\1.jpg" />
+    <Content Include="Models\Img\11261121_961940577225422_3810535009184963923_n.jpg" />
+    <Content Include="Models\Img\1234.png" />
+    <Content Include="Models\Img\14045917_1132429410176537_7979007660474609317_n.jpg" />
+    <Content Include="Models\Img\14117979_1132500953502716_4439321918101854129_n.jpg" />
+    <Content Include="Models\Img\2.jpg" />
+    <Content Include="Models\Img\2.png" />
+    <Content Include="Models\Img\3.jpg" />
+    <Content Include="Models\Img\3.png" />
+    <Content Include="Models\Img\4.jpg" />
+    <Content Include="Models\Img\4.PNG" />
+    <Content Include="Models\Img\5.png" />
+    <Content Include="Models\Img\6.png" />
+    <Content Include="Models\Img\7.png" />
+    <Content Include="Models\Img\b1.jpg" />
+    <Content Include="Models\Img\b2.jpg" />
+    <Content Include="Models\Img\b3.jpg" />
+    <Content Include="Models\Img\b4.jpg" />
+    <Content Include="Models\Img\balão.jpg" />
+    <Content Include="Models\Img\Bandeiras.png.png" />
+    <Content Include="Models\Img\baner3.jpg" />
+    <Content Include="Models\Img\Baner4.jpg" />
+    <Content Include="Models\Img\banerinicio.jpg" />
+    <Content Include="Models\Img\banner-contato1.jpg" />
+    <Content Include="Models\Img\bicombustivel.jpg" />
+    <Content Include="Models\Img\c1.png" />
+    <Content Include="Models\Img\carro.png" />
+    <Content Include="Models\Img\carros.jpg" />
+    <Content Include="Models\Img\cilindro.jpg" />
+    <Content Include="Models\Img\coisodegas.jpg" />
+    <Content Include="Models\Img\contato.jpg" />
+    <Content Include="Models\Img\duvida.jpg" />
+    <Content Include="Models\Img\duvida1.jpg" />
+    <Content Include="Models\Img\duvida2.jpg" />
+    <Content Include="Models\Img\duvida4.jpg" />
+    <Content Include="Models\Img\duvida5.jpg" />
+    <Content Include="Models\Img\duvida5.png" />
+    <Content Include="Models\Img\economia.jpg" />
+    <Content Include="Models\Img\face.jpg" />
+    <Content Include="Models\Img\face.png" />
+    <Content Include="Models\Img\foto1.jpg" />
+    <Content Include="Models\Img\foto2.jpg" />
+    <Content Include="Models\Img\foto3.jpg" />
+    <Content Include="Models\Img\foto4.jpg" />
+    <Content Include="Models\Img\foto5.jpg" />
+    <Content Include="Models\Img\foto6.jpg" />
+    <Content Include="Models\Img\foto7.jpg" />
+    <Content Include="Models\Img\foto8.jpg" />
+    <Content Include="Models\Img\fotohome.png" />
+    <Content Include="Models\Img\full.jpg" />
+    <Content Include="Models\Img\giphy.gif" />
+    <Content Include="Models\Img\gnv.jpg" />
+    <Content Include="Models\Img\gnv1.jpg" />
+    <Content Include="Models\Img\gnv10.jpg" />
+    <Content Include="Models\Img\gnv14.jpg" />
+    <Content Include="Models\Img\gnv3.jpg" />
+    <Content Include="Models\Img\gnv5.jpg" />
+    <Content Include="Models\Img\gnv8.jpg" />
+    <Content Include="Models\Img\gnva.JPG" />
+    <Content Include="Models\Img\gnvb.jpg" />
+    <Content Include="Models\Img\gnvc.jpg" />
+    <Content Include="Models\Img\gnvd.jpg" />
+    <Content Include="Models\Img\gnve.png" />
+    <Content Include="Models\Img\gnvf.jpg" />
+    <Content Include="Models\Img\gnvg.jpg" />
+    <Content Include="Models\Img\gnvh.jpg" />
+    <Content Include="Models\Img\gnvi.jpg" />
+    <Content Include="Models\Img\h.jpg" />
+    <Content Include="Models\Img\icon.png" />
+    <Content Include="Models\Img\icon2.jpg" />
+    <Content Include="Models\Img\icon2.png" />
+    <Content Include="Models\Img\icon3.png" />
+    <Content Include="Models\Img\ii.jpg" />
+    <Content Include="Models\Img\images.png" />
+    <Content Include="Models\Img\img1.jpg" />
+    <Content Include="Models\Img\inicio.png" />
+    <Content Include="Models\Img\insta.png" />
+    <Content Include="Models\Img\instagran.jpg" />
+    <Content Include="Models\Img\logo1.jpg" />
+    <Content Include="Models\Img\logo3.jpg" />
+    <Content Include="Models\Img\logo4.jpg" />
+    <Content Include="Models\Img\logo5.png" />
+    <Content Include="Models\Img\Logo6.jpg" />
+    <Content Include="Models\Img\marcas.png" />
+    <Content Include="Models\Img\menu1.jpg" />
+    <Content Include="Models\Img\moeda.png" />
+    <Content Include="Models\Img\montagem.mp4" />
+    <Content Include="Models\Img\motor.gif" />
+    <Content Include="Models\Img\motor.jpg" />
+    <Content Include="Models\Img\motor1.gif" />
+    <Content Include="Models\Img\Nova.png" />
+    <Content Include="Models\Img\novo.jpg" />
+    <Content Include="Models\Img\o_que_e_gnv.jpg" />
+    <Content Include="Models\Img\quemsomos.png" />
+    <Content Include="Models\Img\segurança.jpg" />
+    <Content Include="Models\Img\segurança.png" />
+    <Content Include="Models\Img\slogam1.jpg" />
+    <Content Include="Models\Img\tabela1.jpg" />
+    <Content Include="Models\Img\tabela2.jpg" />
+    <Content Include="Models\Img\vant1.jpg" />
+    <Content Include="Models\Img\vant2.png" />
+    <Content Include="Models\Img\vant3.jpg" />
+    <Content Include="Models\Img\vant4.jpg" />
+    <Content Include="Models\Img\vant5.jpg" />
+    <Content Include="Models\Img\vantagem01.jpg" />
+    <Content Include="Models\Img\vantagem02.jpg" />
+    <Content Include="Models\Img\vantagem03.jpg" />
+    <Content Include="Models\Img\vantagem4.jpg" />
+    <Content Include="Models\Img\vantagens.jpg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Cauc_economia.js" />
+    <Content Include="Scripts\Duvidas_fotos.js" />
+    <Content Include="Scripts\JavaScript.js" />
+    <Content Include="Scripts\JavaScript1.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Sobre_o_GNV.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52346</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52346/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

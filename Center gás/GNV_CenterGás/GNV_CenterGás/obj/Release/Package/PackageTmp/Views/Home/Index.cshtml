@@ -1,0 +1,460 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+</script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js">
+</script>
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+<script type="text/javascript" src="~/Scripts/Cauc_economia.js"></script>
+<script type="text/javascript" src="~/Scripts/Duvidas_fotos.js"></script>
+<link rel="stylesheet" href="~/Content/galeria.css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<br />
+<br />
+<div>
+
+    <!--CARROSEL INICIA AQUI-->
+    
+    <br />
+
+
+    <div style="background-color: #363636; ">
+        <br />
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/Models/Img/Baner4.jpg" style="width: 100%;  height: auto;" alt="ASP.NET" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Models/Img/logo1.jpg" style="width: 100%; height: auto;" alt="Visual Studio" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Models/Img/gnva.JPG" style="width: 100%;  height: auto;" alt="Package Management" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br />
+
+    </div>
+
+    <!--CARROSEL TERMINA AQUI-->
+
+    <br />
+    <br />
+
+    <center>
+
+
+
+
+
+        <img class="img-responsive" src="~/Models/Img/novo.jpg" width="1300px" />
+        
+
+    </center>
+
+    
+
+
+
+    <!--AQUI INICIA MEU MENU DE NAVEGAÇÃO-->
+    <br />
+    <br />
+
+    <center>
+        <img class="img-responsive" src="~/Models/Icones/centergas.png" width="300px"/><br />
+    </center>
+
+    <div >
+
+        <div id="cor1111" class="col-md-12 board">
+            <div class="board-inner" id="cor133">
+                <ul class="nav nav-tabs">
+
+                    <li>
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab" title="User Experience">
+                            
+                             <h5>Inicio</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="#profile" aria-controls="profile" role="tab" data-toggle="tab" title="Sketch">
+
+                             <h5>Sobre</h5>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#prototyping" aria-controls="prototyping" role="tab" data-toggle="tab" title="Prototyping">
+
+                            <p>
+                                 <h5>Fotos</h5>
+                            </p>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#uidesign" aria-controls="uidesign" role="tab" data-toggle="tab" title="UI Design">
+
+
+                            <p>
+                                <h5>Duvidas</h5>
+                            </p>
+
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+
+
+            <!--conteudo em baixo-->
+
+            <div class="tab-content" >
+                <div class="tab-pane fade in active" id="home">
+
+                    <!--Cauculo economia-->
+                    
+                    <img class="img-responsive" src="~/Models/Img/vant4.jpg" style="width:100%; height:400px; " />
+                    <h2> <p align="center" style="color:darkblue"><b>Calcule sua economia</b></p> </h2>
+
+                    
+
+                    <div id="cor1">
+                        <h5><b>Qual tipo de Combustivel</b></h5>
+                        <form name="f">
+                            <select name="estado">
+                                <option value="0"></option>
+                                <option value="1">Gasolina</option>
+                                <option value="2">Etanol</option>
+                            </select>
+                        </form>
+
+
+                        <h5 style="color:#363636"><b>Quanto você paga por litro ?:</b></h5>
+                        </i><input id="gasolina" type="number" style="font-weight:bold; color:#363636" />
+                        <h5 style="color:#363636"><b>Quantos Km seu veiculo faz por Litro?</b></h5>
+                        <input id="rendimento" type="number" style="font-weight:bold; color:#363636" />
+                        <h5 style="color:#363636"><b>Quantos km você faz em média por dia?:</b></h5>
+                        <input id="media" type="number" style="font-weight:bold; color:#363636" />
+                        <h5 style="color:#363636"> <b>Informe o preço do m³ de gás natural:</b></h5>
+                        <input id="gas" type="number" style="font-weight:bold; color:#363636" /><br />
+
+                        <input type="button" value="Zerar" onClick="history.go(0)">
+                        <button onclick="b()">Calcule</button><br />
+                        <div id="algumacoisa" style="background-color: #E6E6FA">
+                        </div>
+
+
+
+                    </div>
+                    <br />
+
+
+                    <center><h4><b>Com Gnv você só tem a ganhar</b></h4></center>
+
+                    <!--VANTAGENS DO GNV-->
+                   
+                    
+
+                    <section id="carousel" style="margin-left:-20px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                                    <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                                        <!-- Carousel indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+                                        </ol>
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                    </center>
+
+                                                        <blockquote>
+                                                            <h4 style="color:darkblue"><b>ECONOMIA</b></h4>
+                                                            <p>
+                                                                Principal vantagem do Kit GNV é o seu preço: custa em média R$ 2,50 por M³. É o combustível mais barato à ser usado, veja um exemplo: Um carro comum abastece 10 litros (R$ 40,00) em média ele percorre 100 km. Um carro com GNV abastece 16m³ (R$ 40,00) então com o mesmo valor ele percorrerá em média 192 km,
+                                                                ou seja, você consegue rodas quase o <h4> Dobro com mesmo custo</h4>
+                                                            </p>
+                                                        </blockquote>
+</div>
+                                            <div class="item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                    </center>
+                                                        <blockquote>
+                                                            <h4 style="color:darkblue"><b>SEGURANÇA</b></h4>
+                                                            <p>
+                                                                O risco de uma combustão é muito menor com o GNV. Enquanto o etanol se inflama a uma temperatura de 200°C, a gasolina a 300°C, o gás se queima a 620°C.
+                                                            </p><p>Além disso o abastecimento é feito sem que o produto entre em contato com o ar, o que elimina a possibilidade de combustão.</p>
+                                                            <p>Os cilindros de alta pressão, responsáveis pelo armazenamento do GNV nos veículos, são resistentes a choques, colisões e até mesmo ao impacto de projéteis de arma de fogo.</p>
+
+                                                        </blockquote>
+                                            </div>
+                                            <div class="active item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                </center>
+                                                <blockquote>
+                                                    <h4 style="color:darkblue"><b>RESERVA</b></h4><br />
+                                                    <p>Medo de acabar?<br />  Hoje, existem no mundo 160 bilhões de toneladas de petróleo, o que garante uma reserva de mais ou menos 40 anos, enquanto o GNV está em condições de garantir uma reserva de 65 anos.</p><br /><br />
+
+                                                </blockquote>
+                                            </div>
+                                            <div class="item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                </center>
+                                                <blockquote>
+                                                    <h4 style="color:darkblue"><b>MAIOR VIDA ÚTIL DO MOTOR</b></h4>
+
+                                                    <p>Por ser um combustível mais limpo e seguro, o GNV prolonga a vidaútil do motor.  O percuso onde passa o gás, etanol ou gasolina não requer lubrificação, e o único local onde o combustível pode ser estrago é nos cilindros, com a degradação da película e óleo lubrificante, só que esta película NÂO SOFRE DEGRADAÇÃO EM CONTATO COM O GÁS, ao contrário com o que acontece com a gasolina. Isso é fácil de ser constatado pela análise do óleo, que os motores que ultilizam GNV mantém sua qualidade por maior tempo de uso, consequentemente com a maior probabilidade de ótima lubrificação.</p>
+
+                                                </blockquote>
+                                            </div>
+                                            <div class="item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                </center>
+                                                <blockquote>
+                                                    <h4 style="color:darkblue"><b>BÍ-COMBUSTÍVEL</b></h4><br />
+                                                    <p>A conversão do carro para o Kit Gás GNV não elinina a possibilidade de usalo com o seu combustível original</p><p>seu carro se torna Bi-combustível. Mais comodidade e praticidade.</p><br /><br /><br />
+
+                                                </blockquote>
+                                            </div>
+                                            <div class="item">
+                                                <center>
+                                                    <img class="img-responsive" src="~/Models/Icones/like-button-png-2.png" width="100px">
+                                                </center>
+                                                <blockquote>
+                                                    <h4 style="color:darkblue"><b>OUTRAS VANTAGENS</b></h4>
+                                                    <p>Aumento da vida útil do óleo: Já que não há contaminação do lubrificante, o prazo de troca pode aumentar 1000 ou 2000 quilômetros.</p>
+                                                    <p>Limpeza da injeção: por ser um combustível mais limpo, o gás não deixa acumular resíduos nos bicos injetores.</p>
+                                                    <p>Aumento da vida útil do escapamento: não há o acúmulo de água proveniente da gasolina e do álcool, por isso, o sistema dura até 20% a mais do tempo.</p>
+
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--FIM DAS VANTAGENS-->
+                    <img class="img-responsive" src="~/Models/Img/motor.jpg" style="width:100%; height 100px">
+
+                    <!--sobre o gnv-->
+
+                </div>
+                <div class="tab-pane fade" id="profile">
+
+                    <br>
+                    <p align="center">Gás natural veicular (GNV) é um combustível disponibilizado na forma gasosa, a cada dia mais utilizado em automóveis como alternativa à gasolina e ao álcool.</p>
+
+                    <p align="center">
+                        O GNV diferencia-se do gás liquefeito de petróleo (GLP) por ser constituído por hidrocarbonetos na faixa do metano e do etano, enquanto o GLP possui em sua formação hidrocarbonetos na faixa do propano e do butano.
+                        1 metro cúbico de GNV equivale a 1,22 litros de gasolina. 1 metro cúbico de GLP equivale a 1,35 litros de álcool.
+                    </p>
+
+                    <p align="center">
+                        Veículo movido a GNV em Nova Delhi ( Índia ).
+                        No Brasil ocorreu uma corrida na exploração e na distribuição aos postos que envolvia também a modificação de todos os utensílios domésticos e dos motores a gasolina e a álcool que pretendiam trabalhar com gás. Além disso, para forçar o consumo, elevaram-se os impostos dos veículos que usavam combustível líquido, enquanto diminuíam o mesmo imposto para os veículos adaptados. No entanto, com a crise na Bolívia, a partir do decreto de nacionalização da exploração de hidrocarbonetos realizada por Evo Morales, houve uma redução no crescimento.
+                    </p>
+
+                    <p align="center">A economia com a utilização do GNV chega a 66%, sendo indicado para usuários que rodam acima de mil quilômetros por mês, devido ao custo da transformação do veículo.</p>
+
+                    <p align="center">É um combustível extremamente seguro se o veículo for preparado em uma oficina credenciada; os acidentes registrados até hoje são devidos a adaptações realizadas por pessoas não habilitadas.</p>
+
+                    <p align="center">
+                        Em 2006 a FIAT do Brasil anunciou o primeiro carro tetrafuel, o FIAT Siena tetrafuel, que opera com os seguintes combustíveis:<br>
+
+                        Gasolina pura<br>
+                        Gasolina brasileira (com até 27% de álcool)<br>
+                        Álcool<br>
+                        GNV<br>
+                    </p>
+                    <p align="center">A queima do GNV é mais lenta que a da gasolina e isso faz com que haja uma demora na queima da mistura ar/GNV, comparado ao tempo da mistura ar/gasolina. Isso requer um adiantamento na ignição para compensar. Nesse caso são usados "variadores de ponto da ignição" que forneceria uma fagulha antes do que normalmente acontecia, dando mais tempo para o GNV queimar. Estes dispositivos são módulos eletrônicos que adiantam o momento da centelha ocorrida nas velas. Uma outra forma também empregada, de forma menos frequente, é a injeção calculada de combustível, em quantidade bem pequena, junto com o GNV, que acelera a ignição do GNV corrigindo o atraso natural de ignição do mesmo, processo que é feito também por um módulo eletrônico denominado Mobmix. Se aproveita a agilidade da gasolina em se queimar, em relação ao GNV, para acelerar a queima do GNV.</p>
+
+                    <p align="center">Além disso o GNV aguenta uma taxa de compressão maior que a gasolina sem detonar, desta forma, deveriam aumentar a taxa de compressão, caso que nunca acontece, em se tratando de veículos Biflex. O motivo seria que a nova taxa de compressão é adequada ao GNV, mas não ao outro combustível (álcool/gasolina). Com isso se mantém o motor compatível aos dois combustíveis, mas se perde o rendimento superior que um motor usando taxas de compressão maiores traria e que o GNV permite (carece fontes). Isso deixa o GNV subutilizado. Leiam sobre taxa de compressão e melhoramento da eficiência térmica nos motores.</p>
+
+                    <center>
+                        <img class="img-responsive" src="~/Models/Img/tabela2.jpg" />
+                        <img class="img-responsive" src="~/Models/Img/tabela1.jpg" />
+                    </center>
+
+
+                </div>
+                <!--Videos e fotos-->
+                <div class="tab-pane fade" id="prototyping">
+                    <br />
+                    <br />
+                    <center>
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/FOlJPF_B5xQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/Bbe8aQEsiV4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/6AV_-lP_ANo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;<br /><br />
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/zbUPOs_kN8U" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/5ivwso-Mn8E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/b6G0DJb7g8I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;<br /><br />
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/z2hUlgKQiZ4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;
+                        <iframe width="250" height="150" src="https://www.youtube.com/embed/q9nWrOWQVBI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>&nbsp; &nbsp;<br /><br />
+                   </center>
+
+
+                    
+
+
+
+
+                </div>
+
+
+                
+                <div class="tab-pane fade" id="uidesign">
+
+                    <h4 id="botao">O que é o GNV?</h4>
+                    <h5 id="oculta">Sem aditivos ou variações, o Gás Natural Veicular (GNV) é o combustível mais puro encontrado nas bombas dos postos e é também o mais em conta. Ele é encontrado acumulado nas mesmas jazidas de onde se extrai o petróleo. É então encanado e distribuído diretamente para os postos, dificultando a adulteração. Vale lembrar que o GNV (gás natural veicular) é vendido em metros cúbicos (m³). E nunca confunda o GNV com o gás de cozinha (GLP).</h5>
+                    <h4 id="botao1">Como regularizar o documento de um carro com kit gás?</h4>
+                    <h5 id="oculta1">
+                        Para adaptar um veículo para o uso do Gás Natural Veicular, primeiro é preciso solicitar a autorização do Detran de seu Estado. Exija do instalador a nota fiscal do serviço e do kit com a discriminação de todos os componentes instalados.
+                        Após a instalação, o proprietário tem o prazo de dez dias corridos para realizar a inspeção, que dever ser realizada em um local acreditado pelo Inmetro. Uma vez aprovado, será emitido o Certificado de Segurança Veicular (CSV) e o selo do Inmetro, que poderá ser guardado junto com o documento do veículo ou colado no para-brisa - mas uma vez retirado do para-brisa, o selo é automaticamente destruído.
+                        O passo seguinte é fazer a vistoria no veículo exigida pelo Detran. Com todas essas etapas concluídas, será emitido um novo CRV (Certificado de Registro de Veículo) com a observação de modificação e o que foi alterado, no caso o combustível. E não se esqueça também de que os veículos adaptados para rodar com GNV precisam refazer a inspeção para emissão do Certificado de Segurança Veicular (CSV) anualmente. E a cada 5 anos uma Requalificação no cilindro.
+                    </h5>
+                    <h4 id="botao2">Quais são as vantagens do GNV?</h4>
+                    <h5 id="oculta2">Além de ser mais difícil de adulterar, o GNV é mais barato, emite menos poluentes e ainda tem maior rendimento. Por isso ele é mais vantajoso para quem roda bastante. Além disso, alguns Estados brasileiros oferecem desconto no IPVA para os modelos movidos a Gás Natural Veicular. E se o proprietário quiser ou se estiver em uma região sem postos com GNV, ainda é possível abastecer o carro com gasolina ou etanol.</h5>
+
+                    <h4 id="botao3">Quanto irei economizar em combustível usando GNV?</h4>
+                    <h5 id="oculta3">Não existe uma conta exata. Porém, o GNV consegue rodar, em média, 30% a mais quando comparado à gasolina e pode chegar a 50% a mais em relação ao etanol. Esses dados dependem do estilo de condução do motorista e do uso do veículo. </h5>
+
+                    <h4 id="botao4">O que é a requalificação de cilindros?</h4>
+                    <h5 id="oculta4">
+                        Desde 2000, os cilindros para o armazenamento de gás natural veicular - GNV são certificados compulsoriamente no âmbito do Sistema Brasileiro de Avaliação da Conformidade - SBAC. Isso significa que eles só podem ser comercializados no Brasil se tiverem a identificação do sistema - o selo holográfico colado na calota (parte superior) dos cilindros.
+
+                        A certificação compulsória dos cilindros, considerando ser um produto para armazenamento de gás a alta pressão (GNV), objetiva propiciar a confiança de que os mesmos foram produzidos e ensaiados de acordo com os critérios estabelecidos por normas e regulamentos, ou seja, que são seguros.
+
+                        O consumidor de GNV deve estar atento ao período de requalificação dos cilindros, que ocorre a cada cinco anos. A requalificação visa avaliar se o cilindro continua próprio para uso, e só pode ser realizada por empresa certificada por organismos acreditados pelo Inmetro.
+
+                    </h5>
+
+                    <h4 id="botao5">Posso instalar o cilindro embaixo do carro?</h4>
+                    <h5 id="oculta5">Isso é permitido segundo as regras do Inmetro, mas há especificações que devem ser seguidas. Em muitos modelos, o cilindro não cabe sob o chassi de forma segura, o que exige que ele seja então instalado dentro do porta-malas</h5>
+
+                    <h4 id="botao6">Quais são os procedimentos corretos na hora de abastecer com GNV?</h4>
+                    <h5 id="oculta6">Primeiro, o frentista deve fazer o aterramento junto à válvula de abastecimento. E as pessoas nunca devem ficar dentro do carro: existe até uma lei que determina que os ocupantes devem sair do carro durante o abastecimento. Os outros procedimentos de segurança são desligar motor, faróis, sistema de som e todos os equipamentos eletrônicos, desligar também o aparelho celular, abrir as portas e o porta-malas e, obviamente, não fumar. Após o abastecimento, verifique se a mangueira de abastecimento foi devidamente desconectada antes de ligar o veículo.</h5>
+
+                    <h4 id="botao7">O que fazer se sentir cheiro de gás vazando?</h4>
+                    <h5 id="oculta7">A medida a ser adotada é fechar a válvula do cilindro ou utilizar o dispositivo de corte rápido nos equipamentos que dispõe desse acessório. Procure então imediatamente uma oficina credenciada para fazer a verificação.</h5>
+
+                    <h4 id="botao8">Ao instalar o kit GNV, o carro perde potencia?</h4>
+                    <h5 id="oculta8">Em carros de menor potência é possível sentir uma pequena perda devido ao peso do cilindro, com cerca de 70kg, ou seja, o peso de um adulto médio. Quando a instalação não é bem realizada isso também pode acontecer. Com os kits mais modernos e instalações realizadas por oficinas credenciadas pelo Inmetro, a perda de potência é praticamente imperceptível.</h5>
+
+                    <h4 id="botao9">Vale a pena instalar um kit no meu veículo para utilização de GNV?</h4>
+
+                    <h5 id="oculta9">Sim, basta calcular quanto você gasta com combustível para a quilometragem normalmente rodada e fazer uma análise de em quanto tempo o custo de instalação será pago com a economia gerada. Faça essa análise em nosso </h5>
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+
+    </section>
+<!--TAB NAVIGATION TERMINA AQUI.-->
+<!--MAPA-->
+<center>
+    <h3><p align="center" style="color:darkblue"><b>Localização</b></p></h3>
+    <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1704426310052!2d-38.59073558649097!3d-3.7730652444547257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c12eb8fee8b%3A0x6b3ee028bfa10ae7!2sCenter+Gas!5e0!3m2!1spt-BR!2sbr!4v1513729724542" width="1170" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+</center>
+<!--FIM DO MAPA-->
+<!--REDES SOCIAIS-->
+<aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/centroautocentergas/" class="entypo-facebook" target="_blank"><img src="~/Models/Icones/face.png" style="width:25px;" /><span>Facebook</span></a></li>
+        <li><a href="http://instagram.com/gnvcentergas" class="entypo-instagrem" target="_blank"><img src="~/Models/Icones/insta.png" style="width:19px;" /><span>Instagram</span></a></li>
+
+
+    </ul>
+
+</aside>
+<!--FIM REDES SOCIAIS-->
+</body>
+
+
+<!--JIVO-->
+
+<script type='text/javascript'>
+    (function () {
+        var widget_id = '7n79fOY6it'; var d = document; var w = window; function l() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);
+        } if (d.readyState == 'complete') { l(); } else { if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } }
+    })();</script>
+<!--FIM JIVO-->
+<!--RODAPÉ-->
+<br />
+<br />
+<div style="background:#363636">
+    <center>
+        <br />
+        
+        <img class="img-responsive" src="~/Models/Img/Bandeiras.png.png" width="200px" />
+        <p id="branco">
+            Horario de funcionamento: segunda a sexta de 7:50 as 17:50<br />
+            Rua Cacilda Becker, 285 (Av. Perimetral) - João XXIII<br>
+            Fortaleza-Ce<br>
+            (85) 3233-2270
+            <br />
+            <br />
+
+            <img class="img-responsive" src="~/Models/Icones/marcas.png" width="600px" />
+            <br />
+            
+
+
+        </p>
+    </center>
+</div>

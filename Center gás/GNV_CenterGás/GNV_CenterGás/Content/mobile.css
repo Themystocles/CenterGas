@@ -1,0 +1,40 @@
+﻿
+
+
+#tt {
+    margin-left:400px;
+}
+
+
+/*Esconde a dive de classe Overlay caso seja identificado que o width Mobile maximo deseja igual ou menor que 980px*/
+@media only screen and (max-width: 980px) {
+    #tt {
+        margin-left: 0px;
+        
+       
+    }
+}
+
+/*estilo para input formulários*/
+.esti{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px
+}
+
+#btn {
+    border: 0;
+    padding: 05px 15px;
+    font-weight: bolder;
+    color: balack;
+    background-color: #FF8C00;
+    border-radius: 10px;
+
+}
+
